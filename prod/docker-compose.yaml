@@ -1,0 +1,27 @@
+services:
+  django:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8001:8001
+  
+#  postgres:
+#    image: postgres:15.8-alpine3.20
+#    volumes:
+#      - ./pgdata:/var/lib/postgresql/data
+#    environment:
+#      - POSTGRES_DB=django
+#      - POSTGRES_PASSWORD=root
+
+#  postgres:
+#    image: postgres:15.8-alpine3.20
+#    environment:
+#      POSTGRES_DB: djando
+#      POSTGRES_USER: djandouser
+#      POSTGRES_PASSWORD: djangopassword
+#  volumes:
+#      - postgres_data:/var/lib/postgresql/data
+
+#volumes:
+#  postgres_data:
